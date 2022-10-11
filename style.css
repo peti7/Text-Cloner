@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6e6eed;
+    overflow: hidden;
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+.container h2 {
+    padding: 15px 20px;
+    border-bottom: 2px solid #f2f2f2;
+    font-weight: 600;
+}
+
+.container .wrapper {
+    padding: 20px;
+}
+
+.container .wrapper .input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field .inputText {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    resize: none;
+    outline: none;
+    color: #555;
+}
+
+.inputText::-webkit-scrollbar {
+    display: none;
+}
+
+.input-field .inputNum {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-field .inputText:focus,
+.input-field .inputNum:focus {
+    border-color: #8282eb;
+}
+
+.input-field .generate-btn {
+    margin-top: 15px;
+    font-size: 16px;
+    padding: 9px 0;
+    border-radius: 4px;
+    border: none;
+    background-color: #6e6eed;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+.generate-btn:active {
+    background-color: #8282eb;
+}
+
+.wrapper .output {
+    margin: 20px 0 0px 0;
+}
+
+.output h4 {
+    font-weight: 600;
+}
+
+.output .output-text {
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    border-radius: 4px;
+    border: 2px solid #dfdfdf;
+    font-size: 16px;
+    padding: 5px 10px;
+    resize: none;
+}
+
+.output-text::-webkit-scrollbar {
+    width: 5px;
+}
+
+.output-text::-webkit-scrollbar-track {
+    background-color: #dfdfdf
+}
+
+.output-text::-webkit-scrollbar-thumb {
+    background-color: #777;
+    border-radius: 20px;
+}
+
+.output .btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.btn .copy-btn {
+    font-size: 15px;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6e6eed;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: scale(0.5);
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.copy-btn.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+}
+
+.copy-btn:active {
+    background-color: #8282eb;
+}
